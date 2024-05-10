@@ -17,6 +17,23 @@
       position: relative; /* Ensure body can contain absolute positioned elements correctly */
     }
 
+    /* New button styles */
+    .compressor-button {
+      position: absolute;
+      top: 20px; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%); /* Center the button */
+      z-index: 10; /* Ensure it's above other content */
+      padding: 10px 20px;
+      background-color: #4f46e5; /* Match theme */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
     h1 {
       color: white;
       z-index: 3; /* Ensure text appears over the canvas */
@@ -46,6 +63,8 @@
 </head>
 
 <body>
+  <a href="https://compressor-seven.vercel.app/" class="compressor-button">Compressor</a>
+
   <h1>The Recursed Shall Be Resurrected.</h1>
   <canvas id="runic-canvas"></canvas>
 
